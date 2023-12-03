@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Playpen+Sans:wght@500&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&family=Source+Sans+3:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Source Sans 3', sans-serif;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+/*------menu----*/
+
+.container_menu{
+    width: 100%;
+    height: 100px;
+    background: #023877;
+    padding: 0px 20px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: 100%;
+    height: 100%;
+}
+
+nav{
+   height: 100%;  
+}
+nav > ul{
+    height: 100px;
+    display: flex;
+}
+
+nav > ul > li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    padding: 25px;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    padding: 14px;
+    color: #fff;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    background: #0074c7;
+    color: #fff;
+    padding-left: 50px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+  /*-----lupa-----*/
+  
+nav > ul > li:last-child > a{
+    background-image: url(lupa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav > ul > li:last-child:hover > a{
+    background-image: url(lupa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+  /*-----lupa-----*/
+/*------menu----*/
+
+/*------sub_menu----*/
+nav ul li ul{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    background: #023877;
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul:before{
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav ul li ul li a{
+    display: block;
+    color: #fff;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover{
+    background: #0074C7;
+    color: #fff;
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+/*------sub_menu----*/
+
+
+/*-------main------*/
+main{
+    background: #f0f0f0;
+}
+
+article{
+    max-width: 1200px;
+    padding: 50px;
+    color: #0074C7;
+    text-decoration: double;
+    text-align: center;
+}
+
+article p{
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight:500;
+    
+}
+
+
+
+.image-container {
+    height: 350px;
+    width: 100%;
+    background-color: #fff;
+    border: 5px solid #023877;
+  }
+  
+  .image-container img {
+    height: 100%;
+    width: 33.33%;
+    float: left;
+    
+  }
+  
+  
+/*-------main------*/
